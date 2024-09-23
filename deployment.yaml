@@ -20,5 +20,5 @@ spec:
         imagePullPolicy: Always
         name: nginx-web
         volumeMounts:
-        - mountPath: /config
+        - mountPath: /usr/share/nginx/html
           name: config

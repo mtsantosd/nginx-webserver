@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: nginx-web
+  name: nginx-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: nginx-web
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: nginx-web
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: nginx-web
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: nginx-configmap
+      volumes:
+      - name: nginx-configmap
+        configMap:
+          name: nginx-configmap  

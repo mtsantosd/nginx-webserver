@@ -21,4 +21,4 @@ spec:
         name: nginx-web
         volumeMounts:
         - mountPath: /usr/share/nginx/html
-          name: config
+          name: nginx-configmap

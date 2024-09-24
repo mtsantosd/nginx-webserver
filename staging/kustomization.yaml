@@ -20,4 +20,5 @@ configMapGenerator:
 patches:
   -target:
     kind: Deployment
+    name: nginx-web
   path: replicas.yaml

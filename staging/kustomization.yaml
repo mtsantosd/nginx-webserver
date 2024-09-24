@@ -24,4 +24,4 @@ patches:
       kind: Deployment
       name: nginx-web
       namespace: staging
-    path: replicas.yaml
+    path: ./replicas.yaml

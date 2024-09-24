@@ -17,8 +17,3 @@ configMapGenerator:
   files:
     - index.html
 
-patches:
-  - target:
-      kind: Deployment
-      name: nginx-web
-    path: replicas.yaml

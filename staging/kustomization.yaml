@@ -17,3 +17,11 @@ configMapGenerator:
   files:
     - index.html
 
+patches:
+  - target:
+      version: v1
+      group: apps
+      kind: Deployment
+      name: nginx-web
+      namespace: staging
+    path: external_patch.yaml

@@ -7,6 +7,10 @@ patches:
   target:
     kind: Deployment
     name: nginx-web
+configMapGenerator:
+- name: nginx-configmap
+  files:
+    - index.html
 resources:
 - ../../base
 commonLabels:

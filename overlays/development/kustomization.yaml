@@ -12,6 +12,6 @@ patches:
     kind: Deployment
     name: nginx-web
 resources:
-- ../../base
+- ../../base/
 commonlabels:
   env: dev

@@ -13,5 +13,3 @@ configMapGenerator:
     - index.html
 resources:
 - ../../base/
-commonlabels:
-  env: dev

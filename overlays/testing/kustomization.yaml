@@ -4,3 +4,9 @@ namespace: test-env
 namePrefix: test-
 resources:
 - ../../base/
+configMapGenerator:
+- name: nginx-configmap
+  behavior: replace
+  files:
+    - index.html
+

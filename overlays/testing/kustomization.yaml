@@ -4,7 +4,8 @@ namespace: test-env
 namePrefix: test-
 resources:
 replicas: 
-  - count: 2
+  - name: nginx-web
+    count: 2
 - ../../base/
 configMapGenerator:
 - name: nginx-configmap

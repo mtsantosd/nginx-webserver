@@ -1,5 +1,5 @@
 ---
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -24,6 +24,5 @@ spec:
         - mountPath: /usr/share/nginx/html
           name: nginx-configmap
       volumes:
-        #  - name: nginx-configmap
+      - name: nginx-configmap
         configMap:
-          name: nginx-configmap  

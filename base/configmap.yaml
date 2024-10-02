@@ -6,7 +6,7 @@ data:
   index.html: |
     <html>
     <h1>Nginx Container</h1>
-    <h2>Nginx Version: x.x.x</h2>
+    <h2>Nginx Version x.x.x</h2>
     <h2>In Development Environment</h2>
     </html>
 

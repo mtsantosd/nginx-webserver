@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: test-env
 namePrefix: test-
 patches:
-- patch: | -
+- patch: | 
     - op: replace
       path: /spec/replicas
       value: 3

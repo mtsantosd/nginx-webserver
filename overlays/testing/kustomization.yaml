@@ -3,7 +3,8 @@ kind: Kustomization
 namespace: test-env
 namePrefix: test-
 resources:
-replicas: 2
+replicas: 
+ count: 2
 - ../../base/
 configMapGenerator:
 - name: nginx-configmap

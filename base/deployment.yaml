@@ -26,3 +26,6 @@ spec:
       - name: nginx-configmap
         configMap:
           name: nginx-configmap
+          items:
+            - key: index.html
+              path: index.html
